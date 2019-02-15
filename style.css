@@ -1,0 +1,122 @@
+/* --------------------------------------------------------
+Style Sheet for BetEasy WordPress Challenge Plugin
+version: 1.0
+author: Ravindu Ubeysinghe
+email: ravindu.ubeysinghe@gmail.com
+website: https://www.linkedin.com/in/ravinduubeysinghe/
+comment: ** !important clause is used for instances that require explicit overriding of styles that may exist especially on WooCommerce based themes
+----------------------------------------------------------*/
+
+.be-table{
+  width: 600px !important;
+  display: block;
+  margin:20px auto !important;
+  border: none;
+}
+
+.be-table img{
+  width: 50px;
+}
+
+.be-table td{
+  vertical-align: middle !important;
+  border: none !important;
+  border-bottom: 2px solid #8935C0 !important;
+  text-transform: uppercase;
+}
+
+.be-table tr:nth-child(odd){
+  background-color: #fff !important;
+}
+
+.be-table tr:nth-child(even){
+  background-color: #EBEDF5 !important;
+}
+
+.be-table td.be-event-type{
+  width: 20% !important;
+}
+
+.be-table td.be-event-venue-name,
+.be-table td.be-event-time{
+  width: 40% !important;
+}
+
+.be-table .be-event-venue{
+  font-weight: 800;
+}
+
+.be-title{
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #8935C0;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.be-error{
+  text-align: center;
+}
+
+@media(max-width: 800px){
+  .be-table,
+  .be-title,
+  .be-filter-set{
+    width: 100% !important;
+  }
+}
+
+/* Filters */
+
+.be-filter-set{
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#be-filter-thoroughbred,
+#be-filter-trots,
+#be-filter-greyhound,
+#be-filter-reset{
+  width: 23%;
+  padding: 5px 0px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px #d2d2d2;
+  margin-right: 2%;
+  cursor: pointer;
+  vertical-align: top;
+  min-height: 70px;
+}
+
+#be-filter-greyhound{
+  margin-right: 0px !important;
+}
+
+#be-filter-reset{
+   line-height: 59px;
+}
+
+#be-filter-reset p{
+  padding-bottom: 0px;
+  font-weight: 800;
+  color: #8935c0;
+}
+
+#be-filter-thoroughbred:hover,
+#be-filter-trots:hover,
+#be-filter-greyhound:hover,
+#be-filter-reset:hover{
+  box-shadow: 0px 0px 5px #555555;
+}
+
+#be-filter-thoroughbred img,
+#be-filter-trots img,
+#be-filter-greyhound img{
+  width: 50px;
+}
